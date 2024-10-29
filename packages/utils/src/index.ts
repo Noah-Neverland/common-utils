@@ -2,12 +2,8 @@ import { cloneDeep } from 'lodash-es';
 import CryptoJS from 'crypto-js';
 import { isObject } from './is.js';
 
-/**
- * @description:  Set ui mount node
- */
-export function getPopupContainer(node?: HTMLElement): HTMLElement {
-  return (node?.parentNode as HTMLElement) ?? document.body;
-}
+export * as is from './is.js';
+export * as color from './color.js';
 
 /**
  * Add the object as a parameter to the URL
