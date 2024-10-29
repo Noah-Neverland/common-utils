@@ -1,0 +1,19 @@
+{
+  "name": "@hcommon-utils/components",
+  "version": "1.0.0",
+  "description": "components",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Vue3"
+  ],
+  "author": "hss",
+  "license": "ISC",
+  "publishConfig": {
+    "access": "public"
+  }
+}
