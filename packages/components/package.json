@@ -15,5 +15,8 @@
   "license": "ISC",
   "publishConfig": {
     "access": "public"
+  },
+  "dependencies": {
+    "@common-utils/utils": "workspace:^"
   }
 }

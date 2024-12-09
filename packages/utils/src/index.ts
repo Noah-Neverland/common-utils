@@ -1,9 +1,24 @@
+import type { RouteLocationNormalized, RouteRecordNormalized } from 'vue-router';
+import type { App, Plugin } from 'vue';
+
 import { cloneDeep } from 'lodash-es';
 import CryptoJS from 'crypto-js';
 import { isObject } from './is.js';
 
 export * as is from './is.js';
 export * as color from './color.js';
+
+export const withInstall = <T>(component: T, alias?: string) => {
+  const comp = component as any;
+  comp.install = (app: App) => {
+    // @ts-ignore
+    app.component(comp.name || comp.displayName, component);
+    if (alias) {
+      app.config.globalProperties[alias] = component;
+    }
+  };
+  return component as T & Plugin;
+};
 
 /**
  * Add the object as a parameter to the URL
