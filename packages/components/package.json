@@ -1,10 +1,16 @@
 {
   "name": "@common-utils/components",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "components",
   "type": "module",
-  "main": "dist/index.js",
+  "main": "dist/cjs.js",
+  "module": "dist/esm.js",
   "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "package.json",
+    "README.md"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

@@ -5,9 +5,9 @@
   "main": "index.js",
   "private": "true",
   "scripts": {
-    "tsc": "pnpm -r exec npx tsc",
-    "tsc:utils": "pnpm -F @common-utils/utils exec npx tsc",
-    "tsc:components": "pnpm -F @common-utils/components exec npx tsc"
+    "build": "pnpm -r exec rm -rf dist && pnpm -r exec npx rollup -c rollup.config.mjs",
+    "build:utils": "pnpm -F @common-utils/utils exec rm -rf dist && pnpm -F @common-utils/utils exec npx rollup -c rollup.config.mjs",
+    "build:components": "pnpm -F @common-utils/components exec rm -rf dist && pnpm -F @common-utils/components exec npx rollup -c rollup.config.mjs"
   },
   "keywords": [],
   "author": "hss",
@@ -19,12 +19,22 @@
   },
   "devDependencies": {
     "@changesets/cli": "^2.27.9",
+    "@rollup/plugin-commonjs": "^28.0.1",
+    "@rollup/plugin-node-resolve": "^15.3.0",
+    "@rollup/plugin-replace": "^6.0.1",
+    "@rollup/plugin-typescript": "^12.1.1",
     "@types/crypto-js": "^4.2.2",
     "@types/lodash-es": "^4.17.12",
     "@types/node": "^22.8.2",
-    "ant-design-vue": "^4.2.5",
+    "@vue/compiler-sfc": "^3.5.13",
+    "ant-design-vue": "^3.2.0",
+    "less": "^4.2.1",
     "prettier-plugin-organize-imports": "^4.1.0",
     "prettier-plugin-packagejson": "^2.5.3",
+    "rollup": "^4.28.1",
+    "rollup-plugin-postcss": "^4.0.2",
+    "rollup-plugin-typescript2": "^0.36.0",
+    "rollup-plugin-vue": "^6.0.0",
     "typescript": "^5.6.3",
     "vue": "^3.5.12",
     "vue-router": "^4.4.5"
