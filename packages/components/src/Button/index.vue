@@ -1,4 +1,5 @@
 <script lang="ts" setup>
+import {defineComponent} from 'vue';
 import {Button as AntButton} from 'ant-design-vue';
 import {isNullOrUnDef, calcAdd} from '@common-utils/utils';
 

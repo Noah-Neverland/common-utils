@@ -1,8 +1,7 @@
 import postcss from 'rollup-plugin-postcss';
 import typescript from '@rollup/plugin-typescript';
-import resolve from '@rollup/plugin-node-resolve';
+import nodeResolve from '@rollup/plugin-node-resolve';
 import commonjs from '@rollup/plugin-commonjs';
-import replace from '@rollup/plugin-replace';
 
 /** @type {import("rollup").RollupOptions} */
 export default {
@@ -19,7 +18,7 @@ export default {
     },
   ],
   plugins: [
-    resolve(),
+    nodeResolve({exportConditions: true}),
     commonjs(),
     typescript({
       tsconfig: 'tsconfig.json',
@@ -27,9 +26,6 @@ export default {
     postcss({
       extract: true,
       extract: 'index.css',
-    }),
-    replace({
-      'process.env.NODE_ENV': '"production"',
     }),
   ],
 };

@@ -11,6 +11,11 @@
     "strict": true,
     "skipLibCheck": true
   },
-  "include": ["src"],
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.d.ts",
+    "types/**/*.d.ts",
+    "types/**/*.ts"
+  ],
   "exclude": ["src/**/*.test.tsx", "src/**/*.stories.tsx"]
 }
