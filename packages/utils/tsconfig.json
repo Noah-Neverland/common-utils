@@ -1,6 +1,5 @@
 {
   "compilerOptions": {
-    "outDir": "dist",
     "types": ["node"],
     "target": "esnext",
     "module": "esnext",

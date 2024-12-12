@@ -1,18 +1,39 @@
 {
   "name": "@common-utils/utils",
-  "version": "2.0.0",
+  "version": "2.0.2",
   "description": "utils",
   "type": "module",
-  "main": "dist/cjs.js",
-  "module": "dist/esm.js",
-  "types": "dist/index.d.ts",
   "files": [
     "dist",
     "package.json",
     "README.md"
   ],
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "exports": {
+    ".": {
+      "types": "./dist/es/index.d.ts",
+      "import": "./dist/es/index.js",
+      "require": "./dist/lib/index.js"
+    },
+    "./is": {
+      "types": "./dist/es/is.d.ts",
+      "import": "./dist/es/is.js",
+      "require": "./dist/lib/is.js"
+    },
+    "./dateUtil": {
+      "types": "./dist/es/dateUtil.d.ts",
+      "import": "./dist/es/dateUtil.js",
+      "require": "./dist/lib/dateUtil.js"
+    },
+    "./color": {
+      "types": "./dist/es/color.d.ts",
+      "import": "./dist/es/color.js",
+      "require": "./dist/lib/color.js"
+    },
+    "./propTypes": {
+      "types": "./dist/es/propTypes.d.ts",
+      "import": "./dist/es/propTypes.js",
+      "require": "./dist/lib/propTypes.js"
+    }
   },
   "keywords": [],
   "author": "hss",

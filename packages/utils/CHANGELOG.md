@@ -1,5 +1,17 @@
 # @common-utils/utils
 
+## 2.0.2
+
+### Patch Changes
+
+- utils 更新打包方式
+
+## 2.0.1
+
+### Patch Changes
+
+- utils 打包更新方式
+
 ## 2.0.0
 
 ### Major Changes

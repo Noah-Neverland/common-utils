@@ -4,9 +4,6 @@ import { cloneDeep } from 'lodash-es';
 import CryptoJS from 'crypto-js';
 import { isObject } from './is.js';
 
-export * from './is.js';
-export * from './color.js';
-
 export const withInstall = <T>(component: T, alias?: string) => {
   const comp = component as any;
   comp.install = (app: App) => {
