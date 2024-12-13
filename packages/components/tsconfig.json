@@ -2,8 +2,8 @@
   "compilerOptions": {
     "outDir": "dist",
     "target": "esnext",
-    "module": "Node16",
-    "moduleResolution": "node16",
+    "module": "ESNext",
+    "moduleResolution": "node",
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "allowSyntheticDefaultImports": true,

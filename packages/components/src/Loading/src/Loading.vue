@@ -12,7 +12,7 @@
 import {PropType} from 'vue';
 import {defineComponent} from 'vue';
 import {Spin} from 'ant-design-vue';
-import {SizeEnum} from '/@/enums/sizeEnum';
+import {SizeEnum} from '@caetar/enums';
 
 export default defineComponent({
   name: 'Loading',
@@ -65,15 +65,5 @@ export default defineComponent({
     left: 0;
     z-index: 300;
   }
-}
-
-html[data-theme='dark'] {
-  .full-loading:not(.light) {
-    background-color: @modal-mask-bg;
-  }
-}
-
-.full-loading.dark {
-  background-color: @modal-mask-bg;
 }
 </style>

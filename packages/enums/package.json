@@ -1,11 +1,15 @@
 {
   "name": "@caetar/enums",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "enums",
   "type": "module",
   "main": "dist/cjs.js",
   "module": "dist/esm.js",
   "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "package.json"
+  ],
   "keywords": [],
   "author": "HSS",
   "license": "ISC",
