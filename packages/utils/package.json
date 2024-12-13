@@ -1,6 +1,6 @@
 {
-  "name": "@common-utils/utils",
-  "version": "2.0.2",
+  "name": "@caetar/utils",
+  "version": "0.0.0",
   "description": "utils",
   "type": "module",
   "files": [
@@ -33,6 +33,25 @@
       "types": "./dist/es/propTypes.d.ts",
       "import": "./dist/es/propTypes.js",
       "require": "./dist/lib/propTypes.js"
+    }
+  },
+  "typesVersions": {
+    "*": {
+      ".": [
+        "./dist/es/index.d.ts"
+      ],
+      "is": [
+        "./dist/es/is.d.ts"
+      ],
+      "dateUtil": [
+        "./dist/es/dateUtil.d.ts"
+      ],
+      "color": [
+        "./dist/es/color.d.ts"
+      ],
+      "propTypes": [
+        "./dist/es/propTypes.d.ts"
+      ]
     }
   },
   "keywords": [],
