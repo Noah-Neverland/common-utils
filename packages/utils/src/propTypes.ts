@@ -1,5 +1,6 @@
 import { CSSProperties, VNodeChild } from 'vue';
 import { createTypes, VueTypeValidableDef, VueTypesInterface } from 'vue-types';
+import { JSX } from 'vue/jsx-runtime';
 
 export type VueNode = VNodeChild | JSX.Element;
 

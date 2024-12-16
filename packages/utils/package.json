@@ -1,8 +1,9 @@
 {
   "name": "@caetar/utils",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "utils",
   "type": "module",
+  "types": "./dist/es/index.d.ts",
   "files": [
     "dist",
     "package.json",

@@ -1,5 +1,13 @@
 # @caetar/components
 
+## 1.1.4
+
+### Patch Changes
+
+- 测试loading组件
+- Updated dependencies
+  - @caetar/utils@1.0.1
+
 ## 1.1.3
 
 ### Patch Changes

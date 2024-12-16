@@ -23,11 +23,12 @@ export default {
     vuePlugin(),
     resolve(),
     commonjs(),
-    typescript({check: false}),
-    // typescript(),
+    typescript({
+      check: false,
+    }),
     postcss({
       extract: true,
-      extract: 'index.css',
+      extract: 'style/index.css',
     }),
   ],
   external: [

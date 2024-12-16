@@ -57,10 +57,10 @@ export const getAllDate = (start: any, end: any) => {
   de.setUTCFullYear(endArr[0], endArr[1] - 1, endArr[2]);
   const unixDb = db.getTime();
   const unixDe = de.getTime();
-  let stamp;
+  let stamp: number;
   const oneDay = 24 * 60 * 60 * 1000;
   for (stamp = unixDb; stamp <= unixDe;) {
-    dateArr.push(format(new Date(parseInt(stamp))));
+    dateArr.push(format(new Date(stamp)));
     stamp = stamp + oneDay;
   }
   return dateArr;
@@ -83,8 +83,6 @@ export const getAllMonth = () => {
   for (let i = 0; i < 12; i++) {
     arr.push(`${dayjs().format('YYYY')}-${dayjs().month(i).format('MM')}`);
   }
-  console.log('arr', arr);
-
   return arr;
 };
 
