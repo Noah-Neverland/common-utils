@@ -66,4 +66,13 @@ export default defineComponent({
     z-index: 300;
   }
 }
+html[data-theme='dark'] {
+  .full-loading:not(.light) {
+    background-color: rgba(0, 0, 0, 0.45);
+  }
+}
+
+.full-loading.dark {
+  background-color: rgba(0, 0, 0, 0.45);
+}
 </style>

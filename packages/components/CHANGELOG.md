@@ -1,5 +1,11 @@
 # @caetar/components
 
+## 1.1.5
+
+### Patch Changes
+
+- loading组件test
+
 ## 1.1.4
 
 ### Patch Changes
